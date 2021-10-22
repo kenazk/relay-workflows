@@ -85,17 +85,17 @@ steps:
 #         ":octagonal_sign: Detected high disk usage - Ran disk cleanup on: ",
 #         !Parameter host
 #       ]
-- name: run-disk-cleanup-with-PE
-  image: relaysh/puppet-step-task-run-start
-  spec:
-    connection:
-      !Connection { type: puppet, name: relaydemo-hydra }
-    scope:
-      nodes:
-      - "relaydemonix0.classroom.puppet.com"
-    params:
-      days: 3
-    noop: false
-    environment: production
-    name: disk::cleanuplogs_linux
-  dependsOn: approval
+# - name: run-disk-cleanup-with-PE
+#   image: relaysh/puppet-step-task-run-start
+#   spec:
+#     connection:
+#       !Connection { type: puppet, name: relaydemo-hydra }
+#     scope:
+#       nodes:
+#       - "relaydemonix0.classroom.puppet.com"
+#     params:
+#       days: 3
+#     noop: false
+#     environment: production
+#     name: disk::cleanuplogs_linux
+#   dependsOn: approval
