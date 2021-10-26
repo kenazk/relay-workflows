@@ -48,7 +48,7 @@ steps:
 - name: echo
   image: relaysh/stdlib-step-echo
   spec:
-    message: "testing adding new steps and messages from source control"
+    message: "testing adding new steps and messages from source control with my new friend Owen"
 - name: update-event-timeline
   image: relaysh/datadog-step-event-post
   spec:
