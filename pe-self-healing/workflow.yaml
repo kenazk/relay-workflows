@@ -45,10 +45,6 @@ steps:
 - name: approval
   type: approval
   description: "Wait for approval to run task-updated version"
-- name: echo
-  image: relaysh/stdlib-step-echo
-  spec:
-    message: "testing adding new steps and messages from source control with my new friend Owen"
 - name: update-event-timeline
   image: relaysh/datadog-step-event-post
   spec:
