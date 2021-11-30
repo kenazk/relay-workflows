@@ -58,7 +58,7 @@ steps:
     event_text:
       !Fn.concat [ "Ran disk cleanup task on ", !Parameter host ]
     event_type: "info"
-  dependsOn: approval
+  #dependsOn: approval
 - name: aws-ec2-step-instances-reboot
   image: relaysh/aws-ec2-step-instances-reboot
   spec:
@@ -67,7 +67,7 @@ steps:
       region: us-east-1
     instanceIDs:
     - "i-015622d175284e7d4"
-  dependsOn: approval
+  #dependsOn: approval
 
 # - name: wait-for-task
 #   image: relaysh/puppet-step-run-wait
