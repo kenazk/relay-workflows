@@ -35,7 +35,7 @@ steps:
 - name: echo
   image: relaysh/stdlib-step-echo
   spec:
-    message: "testing adding new steps and messages from source control with my wonderful new friends"
+    message: "testing that this workflow has been called from another workflow with owen"
 - name: notify-workflow
   image: relaysh/slack-step-message-send
   spec:
