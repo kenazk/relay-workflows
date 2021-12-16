@@ -46,9 +46,9 @@ steps:
     message: ":octagonal_sign: Detected high disk usage - Approve
       <https://app.relay.sh/workflows/pe-self-healing/preview|auto remediation
       workflow here> :octagonal_sign:"
-#- name: approval
-#  type: approval
-#  description: "Wait for approval to run task-updated version"
+- name: approval
+ type: approval
+ description: "Wait for approval to run task-updated version"
 - name: update-event-timeline
   image: relaysh/datadog-step-event-post
   spec:
