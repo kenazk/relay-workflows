@@ -32,10 +32,10 @@ triggers:
       body: !Data body
       host: !Data host
 steps:
-- name: echo
-  image: relaysh/stdlib-step-echo
-  spec:
-    message: "testing that this step has been added in GH"
+# - name: echo
+#   image: relaysh/stdlib-step-echo
+#   spec:
+#     message: "testing that this step has been added in GH"
 - name: notify-workflow
   image: relaysh/slack-step-message-send
   spec:
